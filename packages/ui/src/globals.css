@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Card Styles */
+.card {
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Select Styles */
+[data-state='open'] {
+  background-color: var(--hover-bg-color);
+  border-color: var(--focus-ring-color);
+}
+
+.select {
+  height: 2.5rem; /* Adjust for select trigger height */
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding */
+  transition: border-color 0.3s ease;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--focus-ring-color);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.select:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.select .icon {
+  margin-left: auto; /* Position icon to the right */
+}
+
+/* Content Styles */
+.select-content {
+  background-color: var(--bg-color);
+  border-radius: 0.375rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.select-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-item:hover {
+  background-color: var(--hover-bg-color);
+}
+
+/* Center all images within a container */
+img {
+  display: block; /* Ensures images are treated as block elements */
+  max-width: 25%; /* Ensures responsiveness */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0 auto; /* Centers the image */
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  display: flex; /* Enable flexbox layout */
+  gap: 10px; /* Optional: Add space between buttons */
+}
+
+/* Popup close button */
+.popup-content button {
+  background-color: #0F172A; /* Fixed the color syntax */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.popup-content button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+.popup-content button:hover {
+  background-color: #1F2937(180, 80, 220);
+}
+
+/* Optional overlay background when popup is open */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Ensure the card footer text is styled */
+.card-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
