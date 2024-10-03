@@ -10,7 +10,8 @@
     "./components/*": [
       "./src/components/*.tsx",
       "./src/components/*.ts"
-    ]
+    ],
+    "./button": "./src/components/ui/button.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -45,3 +46,5 @@
     "tailwindcss-animate": "^1.0.7"
   }
 }
+
+
