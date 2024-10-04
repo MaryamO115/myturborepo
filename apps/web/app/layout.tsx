@@ -51,7 +51,7 @@ export default function RootLayout({
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href="/page2" legacyBehavior passHref>
+              <Link href="/page-2" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Shop
                 </NavigationMenuLink>
